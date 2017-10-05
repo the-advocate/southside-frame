@@ -1,0 +1,202 @@
+:root {
+  --base: #2b8a95;
+  --light: rgba(255, 255, 255, .85);
+  --font-display: "Merriweather Sans", sans-serif;
+  --font-copy: "Mukta", sans-serif;
+}
+
+body {
+  background-color: var(--base);
+  color: var(--light);
+  font-family: var(--font-copy);
+  font-size: 15px;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  height: 100%;
+  margin: auto;
+  max-width: 900px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.header {
+  background: left top / cover repeat-x url(/img/pattern.jpg);
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+.header__logo {
+  background: center / contain no-repeat url(/img/logo.jpg);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  height: 178px;
+  margin: auto;
+  text-indent: -9999em;
+  transform: translateY(40px);
+  width: 200px;
+}
+
+.artwork {
+  flex: 1;
+  margin: 0 0 35px;
+}
+
+.artwork__image {
+  height: 220px;
+  margin-bottom: 5px;
+  text-indent: -9999em;
+}
+
+.artwork:first-child .artwork__image {
+  background: center / cover url(/img/lsu.jpg);
+}
+
+.artwork:last-child .artwork__image {
+  background: center / cover url(/img/nola.jpg);
+}
+
+.artwork__caption p {
+  margin: 0;
+  width: 90%;
+}
+
+.artwork__caption strong {
+  font-family: var(--font-display);
+  font-size: 20px;
+}
+
+.about {
+  margin-bottom: 25px;
+}
+
+.about__heading {
+  border-top: 2px solid var(--light);
+  font-family: var(--font-display);
+  font-size: 32px;
+  margin: 0 0 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__text {
+  align-items: stretch;
+  background: white;
+  color: #333;
+}
+
+.about__customer {
+  background: center / cover url(/img/customer.jpg);
+  flex: 1;
+}
+
+.about__text p {
+  flex: 0.75;
+  padding: 15px;
+}
+
+.about__frames {
+  background: right / contain no-repeat url(/img/frames.gif);
+  flex: 1;
+  transform: scale(1.1);
+  transform-origin: center right;
+}
+
+.steve {
+  align-items: stretch;
+  margin-bottom: 6px;
+}
+
+.steve__text {
+  flex: 0.2;
+  margin: 0;
+  padding: 10px 10px 10px 0;
+  text-align: right;
+}
+
+.steve__graphics {
+  flex: 1;
+  position: relative;
+}
+
+.steve__portrait,
+.steve__exterior {
+  min-height: 180px;
+}
+
+.steve__portrait {
+  background: center / cover url(/img/steve.jpg);
+  flex: 1;
+}
+
+.steve__exterior {
+  background: center / cover url(/img/exterior.jpg);
+  flex: 1;
+}
+
+.contact {
+  margin-bottom: 15px;
+}
+
+.contact__facebook {
+  flex: 0.2;
+  padding-right: 10px;
+}
+
+.contact__facebook a {
+  background: center / contain no-repeat url(/img/facebook.png);
+  float: right;
+  height: 60px;
+  text-indent: -9999em;
+  width: 60px;
+}
+
+.contact__info {
+  flex: 1;
+  padding-top: 4px;
+  text-align: center;
+}
+
+.contact__heading {
+  display: inline;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.contact__heading:after {
+  content: ":";
+}
+
+.contact__address {
+  display: inline;
+}
+
+.contact__telephone {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.contact__address span {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 30em) {
+  .gallery,
+  .about__text,
+  .steve,
+  .steve__graphics,
+  .contact {
+    display: flex;
+  }
+
+  .artwork:first-child {
+    padding-right: 2px;
+  }
+
+  .artwork:last-child {
+    padding-left: 2px;
+  }
+}
