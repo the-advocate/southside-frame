@@ -3387,7 +3387,7 @@ body {
 }
 
 .artwork:last-child .artwork__image {
-  background: center / cover url(/img/nola.jpg);
+  background: center / cover url(/img/home.jpg);
 }
 
 .artwork__caption p {
@@ -3405,12 +3405,16 @@ body {
 }
 
 .about__heading {
-  border-top: 2px solid rgba(255, 255, 255, .85);
   font-family: "Merriweather Sans", sans-serif;
   font-size: 32px;
   margin: 0 0 10px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.about__heading em {
+  font-style: normal;
+  font-size: 53px;
 }
 
 .about__text {
@@ -3538,6 +3542,11 @@ body {
 
 .contact__address span {
   font-weight: bold;
+}
+
+.cutout {
+  border: 2px dashed #fff;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 30em) {
